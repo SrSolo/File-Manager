@@ -1,0 +1,116 @@
+header {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 40px;
+    text-align: center; 
+}
+.topWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+.welcomeMessage {
+    margin: auto;
+}
+
+.name-list {
+    font-family: "Segoe UI", Arial, sans-serif;
+    width: 200px; 
+    height: 50px; 
+    font-size: 40px; 
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: auto; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    text-align: center;
+    vertical-align: center;
+    animation: background-fade 10s infinite;    
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+@keyframes background-fade {
+        0% {
+            background:#C7C7A6;
+        }
+        25% {
+            background:#EAFFDA;
+        }
+        50% {
+            background:#A49966;
+        }
+        75% {
+            background:#605C4E;
+        }
+        100%{
+            background:#C7C7A6;
+        } 
+}  
+
+
+
+  .name-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: scrollNames 10s linear alternate infinite;
+  }
+  
+  
+  /* SCROLL Animation Credits:
+  Learned to use transform and translateY here:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY
+
+ Learned to use animations and keyframes element here:
+ https://www.w3schools.com/css/css3_animations.asp
+  */
+  
+  @keyframes scrollNames {
+    0% {
+        transform: translateY(0%);
+    }
+    20%{
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(-25%);
+    }
+    45%{
+        transform: translateY(-25%);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    70%{
+        transform: translateY(-50%);
+    }
+    75%{
+        transform: translateY(-76%);
+    }
+    100%{
+        transform: translateY(-76%);
+    }
+  }
+
+
+.bar{
+    vertical-align: center;
+    width: 20%;
+    padding: 0px; 
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.submit{
+    vertical-align: center;
+    margin-top: 10px; 
+}
