@@ -8,7 +8,7 @@
         }
         $username = $_REQUEST['fileUser'];
         $filename = $_REQUEST['fileName'];
-        $full_path = sprintf("/home/smnyota/protected/%s/%s", $username, $filename);
+        $full_path = sprintf(**, $username, $filename);
         // Now we need to get the MIME type (e.g., image/jpeg).  PHP provides a neat little interface to do this called finfo.
         $finfo = new finfo(FILEINFO_MIME_TYPE);
         $mime = $finfo->file($full_path);

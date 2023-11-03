@@ -19,7 +19,7 @@
         exit;
     }
     
-    $full_path = sprintf("/home/smnyota/protected/%s/%s", $username, $filename);
+    $full_path = sprintf("**", $username, $filename);
 
     if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $full_path)){
         header("Location: goodUpload.html");

@@ -12,9 +12,9 @@
     // echo "lets start this unit";
     if (isset($_GET['submit'])) {
         $userName = $_GET['userName'];
-        $full_path = sprintf("/home/smnyota/protected/%s", $userName);
+        $full_path = sprintf("**", $userName);
         $userAlreadyExists = false;
-        $users = fopen("/home/smnyota/protected/users.txt", "r"); //r means reading
+        $users = fopen("**", "r"); //r means reading
         while(!feof($users) ){
             //fgets() method from CSE 330 Class page
             //trim() method from --> https://www.php.net/trim
@@ -30,7 +30,7 @@
                 <a href="main.php"> <h2>Return Back to the Dashboard</h2></a>
                 ';
         } else{
-            $userFile = fopen("/home/smnyota/protected/users.txt", "a") or die("Unable to open file!");
+            $userFile = fopen("**", "a") or die("Unable to open file!");
             fwrite($userFile, "\n". $userName); //appends newly created userName to the end of the users.txt file
             fclose($userFile);
             mkdir($full_path); //creates new directory for the newly created user

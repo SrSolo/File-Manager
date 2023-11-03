@@ -27,7 +27,7 @@ session_start();
                   </h2> 
                  ';
                  $fileName = "";
-                 $full_path = sprintf("/home/smnyota/protected/%s/*", $username);
+                 $full_path = sprintf("**", $username);
                  $files = glob($full_path);
                  foreach($files as $file) {
                      echo "<br/>";

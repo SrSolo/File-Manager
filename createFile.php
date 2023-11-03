@@ -12,7 +12,7 @@ if (array_key_exists("userName", $_SESSION)) {
 if(isset($_POST['text']) && isset($_POST['fileName']) && $_POST['submit']) {
     $data = $_POST['text']. "\r\n";
     $filename = $_POST['fileName'];
-    $full_path = sprintf("/home/smnyota/protected/%s/%s", $username, $filename);
+    $full_path = sprintf("**", $username, $filename);
     //I found the file_put_contents() function from the site below which explained what it does and gave examples on how to use it:
     //https://www.php.net/manual/en/function.file-put-contents.php
     $uploadedFile = file_put_contents($full_path, $data, FILE_APPEND | LOCK_EX);
